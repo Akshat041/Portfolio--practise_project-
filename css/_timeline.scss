@@ -1,0 +1,45 @@
+.section-timeline {
+  margin: 6.5rem 0;
+
+  .container {
+    @include container;
+
+    .timeline-section {
+      margin: 2rem auto;
+      display: flex;
+      flex-direction: column;
+      gap: 5rem;
+      @include text-center;
+
+      .timeline {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+
+        .timeline__text {
+          width: 20rem;
+          justify-self: center;
+          color: $primary-color-dark;
+
+          &-title {
+            line-height: 1.2;
+            letter-spacing: 1px;
+            font-size: 1.5rem;
+            width: 20rem;
+            margin-bottom: 1rem;
+          }
+        }
+      }
+
+      .timeline__year {
+        border-bottom: 5px solid $secondary-color;
+
+        .timeline__year-year {
+          font-size: 3.5rem;
+          color: $primary-color-dark;
+        }
+      }
+    }
+  }
+}

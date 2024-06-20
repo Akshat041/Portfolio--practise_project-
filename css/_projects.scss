@@ -1,0 +1,121 @@
+.hero {
+  border-bottom: 5px solid $secondary-color;
+  @include container;
+
+  .container-hero {
+    display: grid;
+    grid-template-columns: 600px 2fr;
+    justify-content: center;
+    align-items: center;
+    margin: 6.5rem 0;
+
+    .text {
+      .hero-heading {
+        font-size: 3rem;
+        letter-spacing: 2px;
+        line-height: 1.2;
+        margin-bottom: 2rem;
+
+        .border::after {
+          content: "";
+          display: block;
+          width: 25%;
+          height: 5px;
+
+          background-color: $secondary-color;
+        }
+      }
+      .hero-para {
+        line-height: 1.7;
+        letter-spacing: 1px;
+        font-size: 1.3rem;
+      }
+    }
+
+    .hero-img {
+      width: 500px;
+    }
+  }
+}
+
+.projects {
+  color: $primary-color-dark;
+  margin: 6.5rem 0;
+
+  .container-projects {
+    @include container;
+
+    .title {
+      margin-bottom: 2rem;
+    }
+
+    .project-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 64px;
+
+      .project-card {
+        @include transition;
+        border-radius: 10px;
+        /* background-color: $secondary-color; */
+        padding: 2.5rem;
+        box-shadow: 0 0 30px 5px #f4f4f4;
+
+        h2 {
+          font-size: 1.5rem;
+          font-weight: 700;
+          margin-bottom: 16px;
+          position: relative;
+        }
+        h2::before {
+          content: "";
+          position: absolute;
+          display: block;
+          bottom: -5px;
+          left: 0;
+
+          width: 25%;
+          height: 5px;
+          background-color: $secondary-color;
+        }
+
+        .project-about {
+          font-size: 1.1rem;
+          margin-bottom: 16px;
+          line-height: 1.4;
+        }
+
+        .project-img {
+          width: 250px;
+          height: 167px;
+          margin: 16px 0;
+        }
+
+        .visiting-link {
+          display: inline-block;
+          margin-right: 16px;
+          margin-bottom: 30px;
+        }
+
+        .project-tech {
+          .tertiary-heading {
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 10px;
+          }
+
+          ul {
+            display: flex;
+            gap: 1rem;
+            list-style-type: none;
+          }
+        }
+      }
+
+      .project-card:hover {
+        scale: 1.02;
+        box-shadow: 0 0 30px 5px #c7c7c7;
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.section-about {
+  .container {
+    @include container;
+
+    .container-about {
+      
+      display: grid;
+      grid-template-columns: 38rem 1fr;
+      gap: 5rem;
+      align-items: center;
+
+      .container-about__text {
+        .about-me {
+          line-height: 1.7;
+          letter-spacing: 1px;
+          font-size: 1.3rem;
+        }
+      }
+
+      img {
+        object-fit: fill;
+        height: 400px;
+      }
+    }
+  }
+}

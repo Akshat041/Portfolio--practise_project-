@@ -1,0 +1,63 @@
+.featured {
+  color: $primary-color-dark;
+
+  .featured-heading {
+    font-size: 2.5rem;
+    padding-bottom: 2.5rem;
+    width: 1100px;
+    @include container-center;
+  }
+
+  .featured-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  .container-featured {
+    width: 1100px;
+    @include container-center;
+    margin-bottom: 7rem;
+
+    display: flex;
+    gap: 5rem;
+
+    .featured-left {
+      display: flex;
+      flex-direction: column;
+
+      .featured-img {
+        width: 400px;
+        height: 224px;
+        box-shadow: 0 0 50px 10px $primary-color-light;
+      }
+
+      .featured-visiting-links {
+        font-size: 1.1rem;
+
+        .featured-visiting-link:link,
+        .featured-visiting-link:visited {
+          margin-right: 2rem;
+        }
+        .featured-visiting-link:hover,
+        .featured-visiting-link:active {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .featured-right {
+    .featured-description {
+      margin-bottom: 1.5rem;
+
+      .featured-info {
+        font-size: 1.1rem;
+      }
+    }
+
+    .featured-tech {
+      .featured-lists {
+        margin-left: 1.3rem;
+      }
+    }
+  }
+}

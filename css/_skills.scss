@@ -1,0 +1,44 @@
+.section-skills {
+  margin-top: 6.5rem;
+  color: $primary-color-dark;
+
+  .container {
+    @include container;
+  }
+  .paragraph {
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    line-height: 1.7;
+  }
+
+  .container-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    .img {
+      width: 500px;
+    }
+
+    .skills-box {
+      margin-top: 3rem;
+
+      .sub-heading {
+        font-size: 1.4rem;
+        margin-bottom: 1.2rem;
+        font-weight: 600;
+      }
+
+      .logos {
+        display: flex;
+        gap: 32px;
+
+        .logo {
+          width: 4rem;
+        }
+      }
+    }
+  }
+}
